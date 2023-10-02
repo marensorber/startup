@@ -4,10 +4,14 @@
 On my application users will be able to learn more about themselves. After creating an account they will be able to take personality quizzes, view their results, and read more about their personality. 
 
 #### Design
+##### Login
 ![Login Page](loginpage.png)
+##### Home Page Layout
 ![Home Page Design](homepage.png)
-![Results Page](resultspage.png)
+##### Active Quiz Page
 ![Active Quiz Design](activequiz.png)
+##### Results Page
+![Results Page](resultspage.png)
 
 #### Key Features
 - Secure login
