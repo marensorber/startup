@@ -10,4 +10,8 @@ ssh -i cs260/marens260key.pem ubuntu@ec2-54-209-212-79.compute-1.amazonaws.com
 You exit the ssh command by simply typing exit in the shell
 
 ## Route 53
-I bought the domain name marensorber.com, and added records. 
+I bought the domain name marensorber.com, and added records.
+
+##HTML Assignments
+I completed the assignments on HTML. This was mostly review. I also deployed and inspected the simon HTML, which seems straightforward. Now I need to write the HTML for my startup.
+ 
