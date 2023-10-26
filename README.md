@@ -40,3 +40,15 @@ On my application users will be able to learn more about themselves. After creat
 **React** - Application ported to use the React web framework.
 
 
+#### HTML Deliverable
+**HTML pages** - 6 html files, one for login(index), home, user, results, quiz, and active quiz
+
+**Links** - login links to home, which links to user and quiz, user links to results, quiz links to results and active quiz, activequiz links to home and results, and results links to home.
+
+**Text** - There is textual content and image representations in all locations.
+
+**Login/Register** - Input box and submit for register and login
+
+**Database** - The user information and results represent data pulled from the database
+
+**Websocket** - the progress bar represents the user's real time progress through the quiz
