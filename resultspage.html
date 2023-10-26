@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Active Quiz</title>
+    <title>Results Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #ffffff;
             margin: 0;
             padding: 0;
-            display: flex;
             flex-direction: column;
             align-items: center;
         }
@@ -47,19 +46,7 @@
             height: 40px;
             margin-right: 20px;
         }
-        .progress-bar {
-            width: 80%;
-            background-color: #ccc;
-            height: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-        .progress {
-            width: 50%; 
-            background-color: #bf0af6;
-            height: 100%;
-            border-radius: 10px;
-        }
+        
         .center-box {
             background-color: #fff;
             border-radius: 10px;
@@ -67,6 +54,9 @@
             padding: 20px;
             text-align: center;
             margin-top: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+            
         }
         h1 {
             font-size: 24px;
@@ -74,20 +64,7 @@
         p {
             margin: 10px 0;
         }
-        .choice-bubble {
-            margin: 10px;
-            cursor: pointer;
-        }
-        .big-button {
-            background-color: #bf0af6;
-            color: #fff;
-            border: none;
-            border-radius: 10px;
-            padding: 15px 30px;
-            font-size: 18px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
+        
     </style>
 </head>
 <body>
@@ -104,27 +81,10 @@
     </div>
 
     <div class="center-box">
-        <h1>question #</h1>
-        <p>question goes here.</p>
-        <div class="choice-bubble">
-            <input type="radio" id="ans1">
-            <label for="ans1">Answer 1</label>
-        </div>
-        <div class="choice-bubble">
-            <input type="radio" id="ans2">
-            <label for="ans2">Answer 2</label>
-        </div>
-        <div class="choice-bubble">
-            <input type="radio" id="ans3">
-            <label for="ans3">Answer 3</label>
-        </div>
-        <div class="choice-bubble">
-            <input type="radio" id="ans4">
-            <label for="ans4">Answer 4</label>
-        </div>
-        <a href="resultspage.html">
-            <button class="big-button">Next Question</button>
-        </a>
+        <h1>RESULTS</h1>
+        <p>All of the quiz results will be displayed here.</p>
+        <p>This text will explain what the results are and what they mean for the user</p>
+        
         
     </div>
 </body>
