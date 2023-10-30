@@ -15,3 +15,5 @@ I bought the domain name marensorber.com, and added records.
 ##HTML Assignments
 I completed the assignments on HTML. This was mostly review. I also deployed and inspected the simon HTML, which seems straightforward. Now I need to write the HTML for my startup.
  
+## Simon CSS
+I inspected and deployed the Simon CSS to my domain at simon.marensorber.com.

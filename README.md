@@ -52,3 +52,7 @@ On my application users will be able to learn more about themselves. After creat
 **Database** - The user information and results represent data pulled from the database
 
 **Websocket** - the progress bar represents the user's real time progress through the quiz
+
+#### CSS Deliverable
+**Simon** - I looked over the Simon CSS and deployed it to my domain at simon.marensorber.com
+
