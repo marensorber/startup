@@ -17,3 +17,6 @@ I completed the assignments on HTML. This was mostly review. I also deployed and
  
 ## Simon CSS
 I inspected and deployed the Simon CSS to my domain at simon.marensorber.com.
+
+## Startup CSS
+I accidentally already did some CSS things while I was writing my HTML because I had previous experience and didn't realize I wasn't supposed to add to the style<>. I still have more styling left to perfect, but I'm moving on for now and I'm going to work on the JS. 

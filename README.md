@@ -54,5 +54,18 @@ On my application users will be able to learn more about themselves. After creat
 **Websocket** - the progress bar represents the user's real time progress through the quiz
 
 #### CSS Deliverable
+I still have some work I'd like to do on the CSS for my application, but I have acheived the basic appearance of the pages. 
+
 **Simon** - I looked over the Simon CSS and deployed it to my domain at simon.marensorber.com
 
+**Header, footer, and main content body** 
+
+**Navigation elements** - All links are operating well, and I've added home buttons to most of the pages that need it. The Logout button also redirects the user to the login page.
+
+**Responsive to window resizing** - My app is flexible and looks good on my phone and in different window sizes.
+
+**Application elements** - All the application elements are appearing roughly the way I'd like them to. 
+
+**Application text content** - I have consistent fonts and layout of text. I may go back in and change the font, but it is currently serviceable.
+
+**Application images** - I am still waiting on my final icons (My roommate who is an art major is designing them for me) but I have put in temporary ones until she's finished. 
