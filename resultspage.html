@@ -86,7 +86,7 @@
     </style>
     
 </head>
-<body>
+<body onload="resultOnload()">
     <div class="top-bar">
         <div class="home-icon">
             <a href="home.html">
@@ -104,10 +104,11 @@
         <div class="result-icon">
             <img src="usericon.png" alt="resultIcon">
         </div>
-        <p>All of the quiz results will be displayed here.</p>
-        <p>This text will explain what the results are and what they mean for the user</p>
+        <p id="resultname">All of the quiz results will be displayed here.</p>
+        <p id="resulttext">This text will explain what the results are and what they mean for the user</p>
         
         
     </div>
+    <script src="universal.js"></script>
 </body>
 </html>

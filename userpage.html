@@ -62,7 +62,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="userOnload()">
     <div class="top-bar">
         <div class="home-icon">
             <a href="home.html">
@@ -71,22 +71,19 @@
         </div>
     </div>
     <div class="container">
-        <h1>User</h1>
+        <h1 id="userinfo">User</h1>
         <!-- eventually this will contain user info that was grabbed from database-->
         <p>user information</p>
 
 
         <!-- eventually the list will contain results that were grabbed from the database upon login -->
-        <ul>
-            <li><a href="resultspage.html">Date of Previous Quiz</a></li>
-            <li><a href="resultspage.html">Date of Previous Quiz</a></li>
-            <li><a href="resultspage.html">Date of Previous Quiz</a></li>
-            <li><a href="resultspage.html">Date of Previous Quiz</a></li>
+        <ul id="results">
         </ul>
         <a href="index.html">
             <button>Logout</button>
         </a>
         
     </div>
+    <script src="universal.js"></script>
 </body>
 </html>

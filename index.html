@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <script src="login.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,20 +58,16 @@
     <div class="login-box">
         <h1>welcome!!</h1>
         <div class="input-group">
-            <input type="text" placeholder="Username or Email">
+            <input type="text" id="username" placeholder="Username or Email">
         </div>
         <div class="input-group">
-            <input type="password" placeholder="Password">
+            <input type="password" id="password" placeholder="Password">
         </div>
         <div class="login-button">
-            <a href="home.html">
-                <button class="login-button">Login</button>
-            </a>
+            <button class="login-button" onclick="login()">Login</button>
         </div>
         <div class="register-button">
-            <a href="home.html">
-                <button class="register-button">Register</button>
-            </a>
+            <button class="register-button" onclick="login()">Register</button>
         </div>
         
         
