@@ -48,6 +48,9 @@
         h1 {
             font-size: 24px;
         }
+        p{
+            font-size: 16px;
+        }
         ul {
             list-style: none;
             padding: 0;
@@ -62,7 +65,7 @@
         }
     </style>
 </head>
-<body onload="userOnload()">
+<body>
     <div class="top-bar">
         <div class="home-icon">
             <a href="home.html">
@@ -73,10 +76,10 @@
     <div class="container">
         <h1 id="userinfo">User</h1>
         <!-- eventually this will contain user info that was grabbed from database-->
-        <p>user information</p>
 
 
         <!-- eventually the list will contain results that were grabbed from the database upon login -->
+        <h1 id="reshead">Results</h1>
         <ul id="results">
         </ul>
         <a href="index.html">
@@ -84,6 +87,6 @@
         </a>
         
     </div>
-    <script src="universal.js"></script>
+    <script src="user.js"></script>
 </body>
 </html>
