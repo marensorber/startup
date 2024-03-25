@@ -69,3 +69,14 @@ I still have some work I'd like to do on the CSS for my application, but I have 
 **Application text content** - I have consistent fonts and layout of text. I may go back in and change the font, but it is currently serviceable.
 
 **Application images** - I am still waiting on my final icons (My roommate who is an art major is designing them for me) but I have put in temporary ones until she's finished. 
+
+#### JavaScript Deliverable
+**Simon** - I deployed and inspected the Simon Javascript. 
+
+**Active Quiz** - I added functionality for managing the quiz. When database connectivity is enabled, the quiz will be fully functional with loaded quiz information. 
+
+**Login and Register** - username is stored and displayed on the User Page following the login. 
+
+**User Page** - Correctly displays username. 
+
+**Interaction Logic** - Quiz logic enabled for active quiz and results. 
