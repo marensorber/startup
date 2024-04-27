@@ -24,7 +24,7 @@ app.listen(port, function () {
 let questions = []
 var fs = require('fs');
 
-fs.readFile('public/assets/luciqs.json', 'utf8', function(err, data) {
+fs.readFile('public/assets/luciqs.JSON', 'utf8', function(err, data) {
     if (err) {
         return console.log(err);
     }

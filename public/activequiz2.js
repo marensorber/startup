@@ -1,3 +1,12 @@
+/*
+FACTORS 
+**most neg to most positive!
+IE = if negative that means introverted
+SN
+TF
+JP
+ */
+
 class Quiz {
     name = "Luci's MBTI QUIZ"
     questions

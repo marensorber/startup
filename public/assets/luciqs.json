@@ -1,0 +1,174 @@
+{
+    "qs":{
+        "q1":{
+            "text": "How much do you agree with this statement: I regularly make new friends",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q2":{
+            "text": "How much do you agree with this statement: Complex and novel ideas excite me more than simple and straightforward ones.",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "SN"
+        },
+        "q3":{
+            "text": "How much do you agree with this statement: I usually feel more persuaded by what resonates emotionally with me than by factual arguments.",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q4":{
+            "text": "How much do you agree with this statement: My living and working spaces are clean and organized.",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q5":{
+            "text": "How much do you agree with this statement: I am not too interested in discussions about various interpretations of creative works.",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "SN"
+        }
+    }
+}
