@@ -4,8 +4,14 @@ const app = express();
 
 app.use(express.static('public'));
 
+
+// Router for service endpoints
+var apiRouter = express.Router();
+app.use(`/api`, apiRouter);
 //endpoints here! 
 apiRouter.get('/questions', (_req, res) => {
+    console.log("sending questions")
+    console.log(questions);
     res.send(questions);
   });
 
@@ -29,4 +35,5 @@ fs.readFile('public/assets/luciqs.JSON', 'utf8', function(err, data) {
         return console.log(err);
     }
     questions = data;
+    console.log(questions);
 });

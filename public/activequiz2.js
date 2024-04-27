@@ -9,22 +9,65 @@ JP
 
 class Quiz {
     name = "Luci's MBTI QUIZ"
-    questions
+    questions = []
     
-      
-
     async loadQuestions(){
         this.questions = []
+        console.log("let's try to load the questions!")
         try{
             //get the questions from the service
+            console.log("CHECKPOINT 1")
             const response = await fetch('api/questions');
-            this.questions = await response.json();
+            console.log("CHECKPOINT 2")
+            let tempquestions = await response.json();
+            console.log("CHECKPOINT 3")
+            console.log(`qnum = ${tempquestions.qs.qnum}`)
+            let qnum = Number(tempquestions.qs.qnum);
+            console.log(`temp questions = ${JSON.stringify(tempquestions)}`)
+            console.log("CHECKPOINT 4")
+            this.questions[0] = JSON.stringify(tempquestions.qs.q1)
+            this.questions[1] = JSON.stringify(tempquestions.qs.q2)
+            this.questions[2] = JSON.stringify(tempquestions.qs.q3)
+            this.questions[3] = JSON.stringify(tempquestions.qs.q4)
+            this.questions[4] = JSON.stringify(tempquestions.qs.q5)
+            for(let i = 0; i < qnum; i++){
+                console.log(`current q = ${this.questions[i]}`)
+            }
+            /*
+            let ids = []
 
+            for(let i = 0; i < qnum; i++){
+                console.log("CHECKPOINT 5")
+                let curr = "qs.q" + (i+1).toString();
+                console.log(curr);
+                ids[i] = curr
+            }
+            for(let i = 0; i < qnum; i++){
+                console.log("CHECKPOINT ????")
+                this.questions[i] = JSON.stringify(tempquestions.ids[i])
+                console.log(`current q = ${this.questions[i]}`)
+            }*/
+
+            
+
+            console.log("CHECKPOINT 6")
+            console.log(`Here is the response = ${this.questions}`);
             //save the questions
-            localStorage.setItem('questions', JSON.stringify(questions));
+            localStorage.setItem("questions", this.questions);
+            console.log("CHECKPOINT 7")
+            console.log(`local storage questions = ${localStorage.getItem("questions")}`)
+            
+            console.log("CHECKPOINT 8")
+            //console.log(`local storage questions = ${localStorage.getItem("questions")}`)
+            localStorage.setItem("quiz", this)
 
+            let index = 0
+            console.log("displaying the question!")
+            localStorage.setItem("index", index)
+            displayQuestion(index)
         } catch{
             // If there was an error then just use the last saved questions
+            console.log("ERROR")
             const oldQuestions = localStorage.getItem('questions');
             if (oldQuestions) {
                 this.questions = JSON.parse(oldQuestions);
@@ -33,41 +76,59 @@ class Quiz {
 
     }
 
-}
+    getQuestions(){
+        return this.questions
+    }
 
-class Question {
-    name
-    text
-    answers
-    factor
-    
-    
-}
-
-class Answer {
-    name
-    text
-    weight
-     
 }
 
 function onload(){
+    console.log("Beginning to load active quiz 2!")
     resetFactors()
-    let quiz = localStorage.getItem("quizname")
-    //localStorage.setItem("Luciquestions", )
-    if(quiz != null){
-        let questionsText = localStorage.getItem(quiz + "questions")
+    //let quiz = localStorage.getItem("quizname")
+    localStorage.setItem("questions", '{"name":"q0", "text":"oh no there isnt any text", "factor":"???"}')
 
-    const questions = null
+    let quiz = new Quiz()
+    console.log("Loading questions!")
+    quiz.loadQuestions()
+    
+    
+    
 
-    if(questionsText != null) {
-        questions = JSON.parse(questionsText);
-    }
-    if(questions != null){
-        let index = 0
-        displayQuestion(index)
-        localStorage.setItem("index", index)
-    }
+}
+
+function resetFactors(){
+    localStorage.setItem("IE", 0)
+    localStorage.setItem("SN", 0)
+    localStorage.setItem("TF", 0)
+    localStorage.setItem("JP", 0)
+}
+
+function buttonClicked(factor, weight){
+    localStorage.setItem("selectedfactor", factor)
+    localStorage.setItem("selectedweight", weight)
+}
+
+function displayQuestion(index){
+    console.log("DISPLAY CHECKPOINT 0")
+    let qs = localStorage.getItem("questions")
+    let currq = qs[index]
+    console.log("DISPLAY CHECKPOINT 1")
+    console.log(`currq = ${currq}`)
+    if(currq != null){
+        let numEl = document.querySelector('#qnum')
+        numEl.innerHTML = `Question ${index + 1}`
+        let textEl = document.querySelector('#qtext')
+        textEl = currq.text
+
+        for(j = 0; j < currq.answers.length; j++){
+            let answer = currq.answers[j]
+            let currans = document.createElement("choice-bubble")
+            currans.innerHTML = `<input type="radio" id="${"ans"+j}" onclick="buttonClicked(${currans.factor}, ${currans.weight})">
+            <label for="${"ans"+j}">${answer.text}</label>`
+            let text = document.getElementById("qtext")
+            text.appendChild(currans)
+        }
     }else{
         let numEl = document.querySelector('#qnum')
         numEl.innerHTML = `Question 0`
@@ -82,32 +143,24 @@ function onload(){
     }
     
 
+    
 }
 
-function buttonClicked(factor, weight){
-    localStorage.setItem("selectedfactor", factor)
-    localStorage.setItem("selectedweight", weight)
-}
+function nextquestion(){
+    let index = localStorage.getItem("index")
+    index = index + 1
+    let quiz = localStorage.getItem("quiz")
+    let questions = localStorage.getItem("questions")
 
+    incrementFactors(localStorage.getItem("selectedfactor"), localStorage.getItem("selectedweight"))
+    updatebar(index, questions.length)
 
-function displayQuestion(index, questions){
-    let currq = questions[i]
-            //name
-            //text
-            //answers
-            //factor
-    let numEl = document.querySelector('#qnum')
-    numEl.innerHTML = `Question ${index + 1}`
-    let textEl = document.querySelector('#qtext')
-    textEl = currq.text
-
-    for(j = 0; j < currq.answers.length; j++){
-        let answer = currq.answers[j]
-        let currans = document.createElement("choice-bubble")
-        currans.innerHTML = `<input type="radio" id="${"ans"+j}" onclick="buttonClicked(${currans.factor}, ${currans.weight})">
-        <label for="${"ans"+j}">${answer.text}</label>`
-        let text = document.getElementById("qtext")
-        text.appendChild(currans)
+    if(index > questions.length + 1){
+        luciResults()
+        window.location.href = "resultspage.html";
+    }else{
+        displayQuestion(quiz, index)
+        localStorage.setItem("index", index)
     }
 }
 
@@ -115,21 +168,6 @@ function updatebar(index, numq){
     let percent = (index / numq) * 100
     document.getElementById('bar').style.width = percent+"%"
     
-}
-
-function calculateResults(quizname){
-    switch (quizname){
-        case "Luci":
-            luciResults();
-    }
-    
-}
-
-function resetFactors(){
-    localStorage.setItem("IE", 0)
-    localStorage.setItem("SN", 0)
-    localStorage.setItem("TF", 0)
-    localStorage.setItem("JP", 0)
 }
 
 function incrementFactors(factor, weight){
@@ -142,8 +180,6 @@ function incrementFactors(factor, weight){
     }
 }
 
-
-
 function luciResults(){
     let result = []
     let intExt = localStorage.getItem("IE")
@@ -151,33 +187,33 @@ function luciResults(){
     let thinkFeel = localStorage.getItem("TF")
     let judgePros = localStorage.getItem("JP")
 
-    if(intExt > 0){
+    if(intExt < 0){
         result[0] = "I"
-    }else if( intExt < 0){
+    }else if( intExt > 0){
         result[0] = "E"
     }else{
         result[0] = "?"
     }
 
-    if(sensInt > 0){
+    if(sensInt < 0){
         result[1] = "S"
-    }else if(sensInt < 0){
+    }else if(sensInt > 0){
         result[1] = "N"
     }else{
         result[1] = "?"
     }
 
-    if(thinkFeel > 0){
+    if(thinkFeel < 0){
         result[2] = "T"
-    }else if(thinkFeel < 0){
+    }else if(thinkFeel > 0){
         result[2] = "F"
     }else{
         result[2] = "?"
     }
 
-    if(judgePros > 0){
+    if(judgePros < 0){
         result[3] = "J"
-    }else if(judgePros < 0){
+    }else if(judgePros > 0){
         result[3] = "P"
     }else{
         result[3] = "?"
@@ -252,52 +288,7 @@ function luciResults(){
 
 }
 
-function nextquestion(){
-    let quiz = localStorage.getItem("quizname")
-    if(quiz != null){
-        let questionsText = localStorage.getItem(quiz + "questions")
 
-        const questions = null
-
-        if(questionsText != null) {
-            questions = JSON.parse(questionsText);
-        }
-        if(questions != null){
-            incrementFactors(localStorage.getItem("selectedfactor"), localStorage.getItem("selectedweight"))
-            let index = localStorage.getItem("index")
-            index = index + 1
-            updatebar(index, questions.length)
-            if(index > questions.length + 1){
-                calculateResults(quiz)
-                window.location.href = "resultspage.html";
-            }else{
-                
-                displayQuestion(index)
-                localStorage.setItem("index", index)
-            }
-            
-        }
-
-    }else{
-        window.location.href = "resultspage.html";
-    }
-}
 
 onload()
-/*<div class="choice-bubble">
-            <input type="radio" id="ans1">
-            <label for="ans1">Answer 1</label>
-        </div>
-        <div class="choice-bubble">
-            <input type="radio" id="ans2">
-            <label for="ans2">Answer 2</label>
-        </div>
-        <div class="choice-bubble">
-            <input type="radio" id="ans3">
-            <label for="ans3">Answer 3</label>
-        </div>
-        <div class="choice-bubble">
-            <input type="radio" id="ans4">
-            <label for="ans4">Answer 4</label>
-        </div>*/
 
