@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="home.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .top-bar {
+            background-color: #bf0af6;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 15px;
+            background-color: #fff;
+            display: inline-block;
+            cursor: pointer;
+            margin-left: auto;
+            transition: transform 0.2s;
+        }
+        .profile-icon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .profile-icon:hover{
+          transform: scale(1.2);
+        }
+        .icon {
+            width: 100px;
+            height: 100px;
+            padding: 15px;
+            margin: 20px;
+            display: inline-block;
+            transition: transform 0.2s;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        .icon img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .icon:hover {
+            transform: scale(1.2);
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        .bottom-bar {
+            background-color: #ffffff;
+            color: #bf0af9;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+  <div class="top-bar">
+    <h1>Home</h1>
+    <a href="userpage.html">
+      <div class="profile-icon">
+        <img src="usericon.png" alt="Profile Picture">
+    </div>
+    </a>
+    
+  </div>
+    
+    <div class="icon">
+        <a href="quizpage.html">
+            <img src="cat.png" alt="Icon 1" width="100" id="quizIcon" onclick="clickQuiz">
+            <p>Luci's MBTI Quiz</p>
+        </a>
+    </div>
+    <div class="bottom-bar">
+        <p>Maren Sorber: <a href="https://github.com/marensorber/startup">GitHub Link</a></p>
+        
+    </div>
+</body>
+</html>

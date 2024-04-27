@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .top-bar {
+            background-color: #bf0af6;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .home-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 15px;
+            background-color: #fff;
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: transform 0.2s;
+        }
+
+        .home-icon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .top-bar img {
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+        }
+        .progress-bar {
+            width: 80%;
+            background-color: #ccc;
+            height: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .progress {
+            width: 50%; 
+            background-color: #bf0af6;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .center-box {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .choice-bubble {
+            margin: 10px;
+            cursor: pointer;
+        }
+        .big-button {
+            background-color: #bf0af6;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="home-icon">
+            <a href="home.html">
+                <img src="homeIcon.png" alt="Icon">
+            </a>
+        </div>
+    </div>
+    
+    <div class="progress-bar">
+        <div class="progress" id="bar"></div>
+        <!--this will eventually pull progress data from websocket-->
+    </div>
+
+    <div class="center-box">
+        <h1 id="qnum">question #</h1>
+        <p id="qtext">question goes here.</p>
+        <div class="answerlist" id="anslist">
+
+        </div>
+        <a onclick="nextquestion()">
+            <button class="big-button">Next Question</button>
+        </a>
+        
+    </div>
+    <script src="activequiz.js"></script>
+</body>
+</html>
