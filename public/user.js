@@ -1,20 +1,15 @@
 class completedResult{
     #date
-    #quizname
     #resultname
     #resultinformation
 
-    constructor(date, quizname, resultname, resultinfo){
+    constructor(date, resultname, resultinfo){
         this.#date = date
-        this.#quizname = quizname
         this.#resultname = resultname
         this.#resultinformation = resultinfo    }
 
     getdate(){
         return this.#date
-    }
-    getquizname(){
-        return this.#quizname
     }
     getresultname(){
         return this.#resultname
@@ -28,34 +23,34 @@ class completedResult{
 
 function insertUserResults(){
     let username = localStorage.getItem("username")
-    const resultsText = localStorage.getItem("usersresults")
-    const results = null
+    let sampleres = new completedResult("9/21/2024", "INTJ", "information!!")
+    let results = [sampleres]
 
-    if(resultsText != null) {
+    /*if(resultsText != null) {
         results = JSON.parse(resultsText);
-    }
+    }*/
 
     //console.log(user.getusername)
     //console.log(user.getresults)
     if(username === null){
         let res = document.createElement("li")
         res.innerHTML = `No Results For User`
-        let results = document.getElementById("results")
-        results.appendChild(res)
+        htmlresults = document.getElementById("results")
+        htmlresults.appendChild(res)
     }else{
         if(results != null){
             for(i = 0; i < results.length; i++){
                 currresult = results[i]
                 let res = document.createElement("li")
-                res.innerHTML = `<a href="resultspage.html">${currresult.date}</a>`
-                let results = document.getElementById("results")
-                results.appendChild(res)
+                res.innerHTML = `<a onClick="buttonClicked('${currresult.getresultname()}', '${currresult.getresultinfo()}')">${currresult.getdate()}</a>`
+                htmlResults = document.getElementById("results")
+                htmlResults.appendChild(res)
             }
         }else{
             let res = document.createElement("li")
             res.innerHTML = `No Results For User`
-            let results = document.getElementById("results")
-            results.appendChild(res)
+            htmlResults = document.getElementById("results")
+            htmlResults.appendChild(res)
         }
         
     }
@@ -70,6 +65,13 @@ function insertUsername(){
     usernameEl.innerHTML = `Username: ${currentuser}`
     let info = document.getElementById("userinfo")
     info.appendChild(usernameEl)
+}
+
+function buttonClicked(name, info){
+    console.log("button clicked! setting result info")
+    localStorage.setItem("resultname", name)
+    localStorage.setItem("resultinfo", info)
+    window.location.href = "resultspage.html";
 }
 
 insertUsername()
