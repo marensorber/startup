@@ -80,3 +80,16 @@ I still have some work I'd like to do on the CSS for my application, but I have 
 **User Page** - Correctly displays username. 
 
 **Interaction Logic** - Quiz logic enabled for active quiz and results. 
+
+#### Service Deliverable
+**Simon** - I deployed and inspected the Simon Service. 
+
+**HTTP service** - using Node.js and Express
+
+**Frontend using express static middleware** - 
+
+**third party service endpoints** - 
+
+**backend provides service endpoints** - 
+
+**frontend calls your service endpoints** - 
