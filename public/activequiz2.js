@@ -61,18 +61,18 @@ class Quiz {
     
     async loadQuestions(){
         this.questions = []
-        console.log("let's try to load the questions!")
+        //console.log("let's try to load the questions!")
         try{
             //get the questions from the service
-            console.log("CHECKPOINT 1")
+            //console.log("CHECKPOINT 1")
             const response = await fetch('api/questions');
-            console.log("CHECKPOINT 2")
+            //console.log("CHECKPOINT 2")
             let tempquestions = await response.json();
-            console.log("CHECKPOINT 3")
-            console.log(`qnum = ${tempquestions.qs.qnum}`)
+            //console.log("CHECKPOINT 3")
+            //console.log(`qnum = ${tempquestions.qs.qnum}`)
             let qnum = Number(tempquestions.qs.qnum);
             //console.log(`temp questions = ${JSON.stringify(tempquestions)}`)
-            console.log("CHECKPOINT 4")
+            //console.log("CHECKPOINT 4")
             //let q1 = new Question(JSON.stringify(tempquestions.qs.q1.name), JSON.stringify(tempquestions.qs.q1.text), JSON.stringify(tempquestions.qs.q1.answers).split("}"),JSON.stringify(tempquestions.qs.q1.factor))
             //console.log(`question 1 = ${q1.toString()}`)
             //this.questions[0] = new Question("q1", JSON.stringify(tempquestions.qs.q1.text), this.extractAnswers(tempquestions.qs.q1.answers), JSON.stringify(tempquestions.qs.q1.factor))
@@ -91,31 +91,31 @@ class Quiz {
                 ids[i] = curr
             }*/
             for(let i = 0; i < qnum; i++){
-                console.log("CHECKPOINT ????")
+                //console.log("CHECKPOINT ????")
                 let index = i + 1
                 this.questions[i] = new Question(("q"+ index.toString()), JSON.stringify(tempquestions.qs["q" + index.toString()].text), this.extractAnswers(tempquestions.qs["q" + index.toString()].answers), JSON.stringify(tempquestions.qs["q" + index.toString()].factor))
                 //console.log(`current q = ${this.questions[i]}`)
             }
-            for(let i = 0; i < qnum; i++){
+            /*for(let i = 0; i < qnum; i++){
                 console.log(`current q = ${this.questions[i]}`)
-            }
+            }*/
             
 
-            console.log("CHECKPOINT 6")
-            console.log(`Here is the response = ${this.questions}`);
+            //console.log("CHECKPOINT 6")
+            //console.log(`Here is the response = ${this.questions}`);
             //save the questions
             localStorage.setItem("questions", this.questions);
-            console.log("CHECKPOINT 7")
-            console.log(`local storage questions = ${localStorage.getItem("questions")}`)
+            //console.log("CHECKPOINT 7")
+            //console.log(`local storage questions = ${localStorage.getItem("questions")}`)
             
-            console.log("CHECKPOINT 8")
+            //console.log("CHECKPOINT 8")
             //console.log(`local storage questions = ${localStorage.getItem("questions")}`)
             localStorage.setItem("quiz", this)
 
             //document.getElementById('nextButton').setAttribute('onclick', `nextquestion(${this.questions})`)
 
             let index = 0
-            console.log("displaying the question!")
+            //console.log("displaying the question!")
             localStorage.setItem("index", index)
             this.displayQuestion(index)
 
@@ -154,27 +154,27 @@ class Quiz {
         //let questions = this.questions
         let currq = this.questions[index]
         
-        console.log("DISPLAY CHECKPOINT 1")
-        console.log(`currq = ${currq}`)
+        //console.log("DISPLAY CHECKPOINT 1")
+        //console.log(`currq = ${currq}`)
         if(currq != null){
             this.updatebar(index, this.questions.length)
             localStorage.setItem("factor", currq.getFactor())
-            console.log("DISPLAY CHECKPOINT 2")
+            //console.log("DISPLAY CHECKPOINT 2")
             let numEl = document.querySelector('#qnum')
-            console.log("DISPLAY CHECKPOINT 3")
+            //console.log("DISPLAY CHECKPOINT 3")
             numEl.innerHTML = `${currq.getText()}`
-            console.log("DISPLAY CHECKPOINT 4")
+            //console.log("DISPLAY CHECKPOINT 4")
             //let textEl = document.querySelector('#qtext')
             //textEl.innerHTML = ""
             let answers = currq.getAnswers()
-            console.log("DISPLAY CHECKPOINT 5")
-            console.log(`here are the current answers = ${answers}`)
-            console.log(`current answer array length = ${answers.length}`)
+            //console.log("DISPLAY CHECKPOINT 5")
+            //console.log(`here are the current answers = ${answers}`)
+            //console.log(`current answer array length = ${answers.length}`)
             
             let htmlAnsList = document.getElementById("anslist")
             htmlAnsList.innerHTML = ""
             for(let j = 0; j < answers.length; j++){
-                console.log("DISPLAY CHECKPOINT 6")
+                //console.log("DISPLAY CHECKPOINT 6")
                 let answer = answers[j]
 
                 let currans = document.createElement("choice-bubble")
@@ -203,21 +203,21 @@ class Quiz {
     }
     
     nextquestion(){
-        console.log("GOT TO NEXT QUESTION!!")
+        //console.log("GOT TO NEXT QUESTION!!")
         let index = localStorage.getItem("index")
         index = Number(index) + 1
         //let quiz = localStorage.getItem("quiz")
-        console.log(`new index = ${index} out of question length ${this.questions.length}`)
+        //console.log(`new index = ${index} out of question length ${this.questions.length}`)
     
         this.incrementFactors(localStorage.getItem("selectedfactor"), localStorage.getItem("selectedweight"))
         
-        console.log(`index = ${index} and comparing factor = ${(this.questions.length + 1)}`)
+        //console.log(`index = ${index} and comparing factor = ${(this.questions.length + 1)}`)
         if(index >= this.questions.length){
-            console.log("next q CHECKPOINT 2")
+            //console.log("next q CHECKPOINT 2")
             this.luciResults()
             window.location.href = "resultspage.html";
         }else{
-            console.log("next q CHECKPOINT 3")
+            //console.log("next q CHECKPOINT 3")
             this.displayQuestion(index)
             localStorage.setItem("index", index)
         }
@@ -230,14 +230,14 @@ class Quiz {
     }
     
     incrementFactors(factor, weight){
-        console.log("time to increment")
-        console.log(`factor = ${factor} and weight = ${weight}`)
+        //console.log("time to increment")
+        //console.log(`factor = ${factor} and weight = ${weight}`)
         let og = Number(localStorage.getItem(factor))
-        console.log(`the new factor value should be ${og} + ${weight}`)
+        //console.log(`the new factor value should be ${og} + ${weight}`)
         if(og != null){
-            console.log("og is not null!")
+            //console.log("og is not null!")
             let newfact = Number(og) + Number(weight)
-            console.log(`new factor value = ${newfact}`)
+            //console.log(`new factor value = ${newfact}`)
             localStorage.setItem(factor, newfact)
         }else{
             console.log("ohno")
@@ -245,18 +245,18 @@ class Quiz {
     }
     
     luciResults(){
-        console.log("Results Checkpoint 1")
+        //console.log("Results Checkpoint 1")
         let result = []
         let intExt = localStorage.getItem("IE")
-        console.log(`IE value = ${intExt}`)
+        //console.log(`IE value = ${intExt}`)
         let sensInt = localStorage.getItem("SN")
-        console.log(`SN value = ${sensInt}`)
+        //console.log(`SN value = ${sensInt}`)
         let thinkFeel = localStorage.getItem("TF")
-        console.log(`TF value = ${thinkFeel}`)
+        //console.log(`TF value = ${thinkFeel}`)
         let judgePros = localStorage.getItem("JP")
-        console.log(`JP value = ${judgePros}`)
+        //console.log(`JP value = ${judgePros}`)
         
-        console.log("Results Checkpoint 2")
+        //console.log("Results Checkpoint 2")
         if(intExt < 0){
             result[0] = "I"
         }else if( intExt > 0){
@@ -264,9 +264,9 @@ class Quiz {
         }else{
             result[0] = "?"
         }
-        console.log(`result for IE = ${result[0]}`)
+        //console.log(`result for IE = ${result[0]}`)
     
-        console.log("Results Checkpoint 3")
+        //console.log("Results Checkpoint 3")
         if(sensInt < 0){
             result[1] = "S"
         }else if(sensInt > 0){
@@ -274,9 +274,9 @@ class Quiz {
         }else{
             result[1] = "?"
         }
-        console.log(`result for SN = ${result[1]}`)
+        //console.log(`result for SN = ${result[1]}`)
     
-        console.log("Results Checkpoint 4")
+        //console.log("Results Checkpoint 4")
         if(thinkFeel < 0){
             result[2] = "T"
         }else if(thinkFeel > 0){
@@ -284,9 +284,9 @@ class Quiz {
         }else{
             result[2] = "?"
         }
-        console.log(`result for TF = ${result[2]}`)
+        //console.log(`result for TF = ${result[2]}`)
     
-        console.log("Results Checkpoint 5")
+        //console.log("Results Checkpoint 5")
         if(judgePros < 0){
             result[3] = "J"
         }else if(judgePros > 0){
@@ -294,9 +294,9 @@ class Quiz {
         }else{
             result[3] = "?"
         }
-        console.log(`result for JP = ${result[3]}`)
+        //console.log(`result for JP = ${result[3]}`)
 
-        console.log(`final result = ${result.toString()}`)
+        //console.log(`final result = ${result.toString()}`)
     
         switch (result.toString()){
             case "I,N,T,J":
@@ -371,18 +371,18 @@ class Quiz {
                 localStorage.setItem("resultname", result[0].concat(result[1], result[2], result[3]))
                 localStorage.setItem("resultinfo", ":(((")
         }
-        console.log(`final results (saved to local storage!): name = ${localStorage.getItem("resultname")} and info = ${localStorage.getItem("resultinfo")}`)
+        //console.log(`final results (saved to local storage!): name = ${localStorage.getItem("resultname")} and info = ${localStorage.getItem("resultinfo")}`)
         let finalRes = new completedResult(getCurrentDate(), localStorage.getItem("resultname"), localStorage.getItem("resultinfo"))
         this.saveResult(finalRes)
     
     }
 
     async saveResult(result) {
-        console.log("sending new result")
+        //console.log("sending new result")
         //const userName = this.getPlayerName();
         //const date = new Date().toLocaleDateString();
         const newResult = {date: result.getdate(), resultname: result.getresultname(), resultinfo: result.getresultinfo()};
-        console.log(`result = ${JSON.stringify(newResult)}`)
+        //console.log(`result = ${JSON.stringify(newResult)}`)
         try {
           const response = await fetch('/api/result', {
             method: 'POST',
@@ -392,11 +392,10 @@ class Quiz {
     
           // Store what the service gave us as the high scores
           const serviceresults = await response.json();
-          console.log(`service results = ${JSON.stringify(serviceresults)}`)
+          //console.log(`service results = ${JSON.stringify(serviceresults)}`)
           //const scores = await response.json();
           //localStorage.setItem('scores', JSON.stringify(scores));
         } catch(error) {
-          // If there was an error then just track scores locally
           //this.updateScoresLocal(newScore);
           console.log(`error saving results: ${error}`)
         }
@@ -459,13 +458,13 @@ function resetFactors(){
 }
 
 function onload(){
-    console.log("Beginning to load active quiz 2!")
+    //console.log("Beginning to load active quiz 2!")
     resetFactors()
     //let quiz = localStorage.getItem("quizname")
     localStorage.setItem("questions", '{"name":"q0", "text":"oh no there isnt any text", "factor":"???"}')
 
     quiz = new Quiz()
-    console.log("Loading questions!")
+    //console.log("Loading questions!")
     quiz.loadQuestions()
     
     
@@ -486,7 +485,7 @@ function nextQuestion(){
 function buttonClicked(weight, factor){
     //let factor = "IE"
     //let weight = 0
-    console.log(`button has been clicked. factor = ${factor} and weight = ${weight}`)
+    //console.log(`button has been clicked. factor = ${factor} and weight = ${weight}`)
     localStorage.setItem("selectedfactor", factor)
     localStorage.setItem("selectedweight", weight)
 }
