@@ -86,10 +86,7 @@ I still have some work I'd like to do on the CSS for my application, but I have 
 
 **HTTP service** - using Node.js and Express
 
-**Frontend using express static middleware** - 
+**Frontend** - I used express static middleware for my frontend connections. There are frontend calls in user.js and activequiz.js
 
-**third party service endpoints** - 
+**Backend** - I provided backend service endpoints in index.js
 
-**backend provides service endpoints** - 
-
-**frontend calls your service endpoints** - 
