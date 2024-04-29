@@ -7,26 +7,53 @@ TF
 JP
  */
 
+//const completedResult = require ("./user.js")
+
+//import { completedResult } from './user.js';
+
 //These will be loaded from the database eventually
-const intjinfo = "here's the INTJ info"
-const istjinfo = "here's the ISTJ info"
-const isfjinfo = "here's the ISFJ info"
-const isfpinfo = "here's the ISFP info"
-const istpinfo = "here's the ISTP info"
-const intpinfo = "here's the INTP info"
-const infpinfo = "here's the INFP info"
-const infjinfo = "here's the INFJ info"
-const entjinfo = "here's the ENTJ info"
-const enfjinfo = "here's the ENFJ info"
-const entpinfo = "here's the ENTP info"
-const estjinfo = "here's the ESTJ info"
-const esfjinfo = "here's the ESFJ info"
-const estpinfo = "here's the ESTP info"
-const enfpinfo = "here's the ENFP info"
-const esfpinfo = "here's the ESFP info"
+const intjinfo = "here is the INTJ info"
+const istjinfo = "here is the ISTJ info"
+const isfjinfo = "here is the ISFJ info"
+const isfpinfo = "here is the ISFP info"
+const istpinfo = "here is the ISTP info"
+const intpinfo = "here is the INTP info"
+const infpinfo = "here is the INFP info"
+const infjinfo = "here is the INFJ info"
+const entjinfo = "here is the ENTJ info"
+const enfjinfo = "here is the ENFJ info"
+const entpinfo = "here is the ENTP info"
+const estjinfo = "here is the ESTJ info"
+const esfjinfo = "here is the ESFJ info"
+const estpinfo = "here is the ESTP info"
+const enfpinfo = "here is the ENFP info"
+const esfpinfo = "here is the ESFP info"
 
 let quiz = null; 
 
+class completedResult{
+    #date
+    #resultname
+    #resultinformation
+
+    constructor(date, resultname, resultinfo){
+        this.#date = date
+        this.#resultname = resultname
+        this.#resultinformation = resultinfo    }
+
+    getdate(){
+        return this.#date
+    }
+    getresultname(){
+        return this.#resultname
+    }
+    getresultinfo(){
+        return this.#resultinformation
+    }
+    toString(){
+        return `Result ${this.#date}: ${this.#resultname}`
+    }
+}
 
 class Quiz {
     name = "Luci's MBTI QUIZ"
@@ -345,8 +372,35 @@ class Quiz {
                 localStorage.setItem("resultinfo", ":(((")
         }
         console.log(`final results (saved to local storage!): name = ${localStorage.getItem("resultname")} and info = ${localStorage.getItem("resultinfo")}`)
+        let finalRes = new completedResult(getCurrentDate(), localStorage.getItem("resultname"), localStorage.getItem("resultinfo"))
+        this.saveResult(finalRes)
     
     }
+
+    async saveResult(result) {
+        console.log("sending new result")
+        //const userName = this.getPlayerName();
+        //const date = new Date().toLocaleDateString();
+        const newResult = {date: result.getdate(), resultname: result.getresultname(), resultinfo: result.getresultinfo()};
+        console.log(`result = ${JSON.stringify(newResult)}`)
+        try {
+          const response = await fetch('/api/result', {
+            method: 'POST',
+            headers: {'content-type': 'application/json'},
+            body: JSON.stringify(newResult),
+          });
+    
+          // Store what the service gave us as the high scores
+          const serviceresults = await response.json();
+          console.log(`service results = ${JSON.stringify(serviceresults)}`)
+          //const scores = await response.json();
+          //localStorage.setItem('scores', JSON.stringify(scores));
+        } catch(error) {
+          // If there was an error then just track scores locally
+          //this.updateScoresLocal(newScore);
+          console.log(`error saving results: ${error}`)
+        }
+      }
     
 
 }
@@ -419,6 +473,12 @@ function onload(){
 
 }
 
+function getCurrentDate(){
+    const date = new Date();
+    let currDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
+    return currDate
+}
+
 function nextQuestion(){
     quiz.nextquestion()
 }
@@ -431,5 +491,6 @@ function buttonClicked(weight, factor){
     localStorage.setItem("selectedweight", weight)
 }
 
+//window.buttonClicked = buttonClicked; 
 onload()
 
