@@ -48,16 +48,31 @@ class Quiz {
     name = "Luci's MBTI QUIZ"
     questions = []
     
+    
     async loadQuestions(){
+        console.log("Checkpoint 1");
         this.questions = []
         try{
+            console.log("Checkpoint 2");
             const response = await fetch('api/questions');
+            console.log("Checkpoint 3");
             let tempquestions = await response.json();
+            console.log("Checkpoint 4");
+            console.log(`Questions = ${JSON.stringify(tempquestions)}`)
+            console.log(`Questions = ${tempquestions.qs}`)
             let qnum = Number(tempquestions.qs.qnum);
+            console.log("Checkpoint 5");
+            
             
             for(let i = 0; i < qnum; i++){
                 let index = i + 1
                 this.questions[i] = new Question(("q"+ index.toString()), JSON.stringify(tempquestions.qs["q" + index.toString()].text), this.extractAnswers(tempquestions.qs["q" + index.toString()].answers), JSON.stringify(tempquestions.qs["q" + index.toString()].factor))
+            }
+
+            console.log("HERE ARE THE QUESTIONS WE GOT FROM THE DB!!")
+            for(let i = 0; i < qnum; i++){
+                console.log(`question ${i}: ${this.questions[i]}`)
+
             }
             
             localStorage.setItem("questions", this.questions);

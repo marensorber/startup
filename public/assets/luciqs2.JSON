@@ -1,0 +1,1774 @@
+{
+    "qname": "Luci Quiz",
+    "qs":{
+        "qnum": 52,
+        "q1":{
+            "text": "How much do you agree with this statement: I appreciate when people are down to earth",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "SN"
+        },
+        "q2":{
+            "text": "How much do you agree with this statement: I struggle setting and following routines, and sometimes don't see the point in them",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q3":{
+            "text": "How much do you agree with this statement: I prefer hanging out with people in small groups or one-on-one",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q4":{
+            "text": "How much do you agree with this statement: I am capable of entertaining myself with nothing but my own thoughts when traveling for a long distance",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "SN"
+        },
+        "q5":{
+            "text": "How much do you agree with this statement: I sometimes get uncomfortable or don't know how to respond when people around me get emotional",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q6":{
+            "text": "How much do you agree with this statement: I appreciate when someone I don't know strikes up a conversation with me",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q7":{
+            "text": "How much do you agree with this statement: I find it easy to imagine how someone might be feeling, even if they are going through something I have never experienced",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q8":{
+            "text": "How much do you agree with this statement: I have been told I seem shy or aloof when people first meet me",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q9":{
+            "text": "How much do you agree with this statement: It is more comfortable or exciting to me to have social events planned in advance",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q10":{
+            "text": "How much do you agree with this statement: Lively social events leave me feeling even more energized",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q11":{
+            "text": "How much do you agree with this statement: I generally prefer art and media that is pretty or entertaining over art and media that makes a statement",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "SN"
+        },
+        "q12":{
+            "text": "How much do you agree with this statement: Surprises and spontaneity are exciting to me",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q13":{
+            "text": "How much do you agree with this statement:  I share my opinions openly, even if I think someone might be offended",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q14":{
+            "text": "How much do you agree with this statement: I often prefer to stay home on the weekends rather than going out",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q15":{
+            "text": "How much do you agree with this statement: In low-stakes environments, I like trying new techniques or coming up with different ways of doing things just to see what happens",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "SN"
+        },
+        "q16":{
+            "text": "How much do you agree with this statement: I prefer going out on the spur of the moment rather than having social outings planned in advance",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q17":{
+            "text": "How much do you agree with this statement: I like discussing different ways of interpreting art and media",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "SN"
+        },
+        "q18":{
+            "text": "How much do you agree with this statement: Big decisions need to feel right to me more than they need to be logical",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q19":{
+            "text": "How much do you agree with this statement: I prefer to have an organized, methodical workflow",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q20":{
+            "text": "How much do you agree with this statement: I prefer to make decisions based on what makes the most logical sense",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q21":{
+            "text": "How much do you agree with this statement: I make new friends easily",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q22":{
+            "text": "How much do you agree with this statement: I enjoy thinking about and discussing theoretical ideas, even if they have no impact on the world or my life",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "SN"
+        },
+        "q23":{
+            "text": "How much do you agree with this statement: Schedules feel constricting to me",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q24":{
+            "text": "How much do you agree with this statement: It is important to me that other people perceive me as friendly and kind",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q25":{
+            "text": "How much do you agree with this statement: I sometimes feel upset or find it difficult to get back on track when things don't go according to the plan I had laid out",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q26":{
+            "text": "How much do you agree with this statement: I prefer to interact only with people I already know when at a large social event",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q27":{
+            "text": "How much do you agree with this statement: I find movies, TV shows, or books with ambiguous or unclear endings disatisfying",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "SN"
+        },
+        "q28":{
+            "text": "How much do you agree with this statement: I sometimes struggle to understand or communicate exactly what I am feeling",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q29":{
+            "text": "How much do you agree with this statement:  I am more interested in learning about how someone thinks than facts about their life",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "SN"
+        },
+        "q30":{
+            "text": "How much do you agree with this statement: I have a large friend group or am friends with many people across different social groups",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q31":{
+            "text": "How much do you agree with this statement: Traditions are an important part of how society functions",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "SN"
+        },
+        "q32":{
+            "text": "How much do you agree with this statement: I can come across as cynical or skeptical",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q33":{
+            "text": "How much do you agree with this statement: I prefer to work on things irregularly according to when I feel like it than follow a set schedule",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q34":{
+            "text": "How much do you agree with this statement: It is important to consider how everyone involved in a decision is feeling",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q35":{
+            "text": "How much do you agree with this statement: I get stressed when there is no clear plan for what happens next.",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q36":{
+            "text": "How much do you agree with this statement: I often find myself relating personal experiences or ideas to larger, more abstract concepts",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "SN"
+        },
+        "q37":{
+            "text": "How much do you agree with this statement: Meeting new people is fun and exciting for me",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q38":{
+            "text": "How much do you agree with this statement: I tend to have hobbies that can be done individually, such as going to the gym, cooking, or knitting.",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q39":{
+            "text": "How much do you agree with this statement:  I sometimes struggle to communicate all the nuances of my opinion on a subject",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "SN"
+        },
+        "q40":{
+            "text": "How much do you agree with this statement: I have trouble following schedules, even when I set them for myself",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q41":{
+            "text": "How much do you agree with this statement: I adapt easily to changes in plans",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q42":{
+            "text": "How much do you agree with this statement: I get frustrated with myself when I act in a way I know is not logical",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q43":{
+            "text": "How much do you agree with this statement: I like to make plans that help me finish tasks before their deadlines",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q44":{
+            "text": "How much do you agree with this statement: I usually like or don't mind being the center of attention",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q45":{
+            "text": "How much do you agree with this statement: I am able to identify what emotion I am experiencing at any given time",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q46":{
+            "text": "How much do you agree with this statement: I generally try to hide my feelings, sometimes even from people I am close to",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q47":{
+            "text": "How much do you agree with this statement: After a social event, I often need time alone to recharge, even if I enjoyed the event",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q48":{
+            "text": "How much do you agree with this statement: My circle of friends is small, but I am very close with each of them",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "IE"
+        },
+        "q49":{
+            "text": "How much do you agree with this statement: Making schedules and to-do lists helps me to feel and be productive or efficient",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "JP"
+        },
+        "q50":{
+            "text": "How much do you agree with this statement: I think it is pointless to question the way things work in society if nothing can be done to change them",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "SN"
+        },
+        "q51":{
+            "text": "How much do you agree with this statement: People should be mindful of others' feelings when discussing controversial topics",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": -3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": -2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": -1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": 1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": 2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": 3
+                }
+            }, 
+            "factor": "TF"
+        },
+        "q52":{
+            "text": "How much do you agree with this statement: I appreciate work environments with clear structures of authority",
+            "answers":{
+                "a1":{
+                    "text": "strongly disagree",
+                    "weight": 3
+                },
+                "a2":{
+                    "text": "disagree",
+                    "weight": 2
+                },
+                "a3":{
+                    "text": "slightly disagree",
+                    "weight": 1
+                },
+                "a4":{
+                    "text": "?????",
+                    "weight": 0
+                },
+                "a5":{
+                    "text": "slightly agree",
+                    "weight": -1
+                },
+                "a6":{
+                    "text": "agree",
+                    "weight": -2
+                },
+                "a7":{
+                    "text": "strongly agree",
+                    "weight": -3
+                }
+            }, 
+            "factor": "SN"
+        }
+    }
+}

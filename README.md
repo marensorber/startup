@@ -90,3 +90,11 @@ I still have some work I'd like to do on the CSS for my application, but I have 
 
 **Backend** - I provided backend service endpoints in index.js
 
+#### Database Deliverable
+**Simon** - I deployed and inspected the Simon Database. 
+
+**MongoDB Atlas** - I created a database with MongoDB Atlas. 
+
+**Backend Endpoints** - I provided backend endpoints for manipulating my application data. 
+
+**Data Storage** - I store my application data in MongoDB.
